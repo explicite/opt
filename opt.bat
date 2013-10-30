@@ -1,0 +1,1 @@
+matlab -nosplash -r main -logfile .\temp\logfile
