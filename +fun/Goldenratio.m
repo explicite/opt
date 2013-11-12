@@ -1,7 +1,7 @@
 function [ x ] = Goldenratio( f, a, b )
 %GOLDENRATIO Summary of this function goes here
 %   Detailed explanation goes here
-    precision = 0.01;
+    precision = 0.0001;
     Nmax = 10000;
     
     i = 0;
