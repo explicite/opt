@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-%Test stub
-function [ output_args ] = Expansion( input_args )
-    disp(input_args)
-end
-
-=======
 function [ a b ] = Expansion( f, d, e )
 import fun.Penalty
 %EXPANSION Summary of this function goes here
