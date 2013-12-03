@@ -1,6 +1,6 @@
 %import from fun folder
-import fun.fibonacciOpt
-import fun.lagrangeOpt
+import fun.Fibonacci
+import fun.Lagrange
 
 %Examples
 
@@ -8,7 +8,7 @@ import fun.lagrangeOpt
 f = @(x) (6 * x - 2) * (6 * x - 2) * sin(12 * x - 4);
 lim = [0 1];
 eps = 0.001;
-optLim = fibonacciOpt(f, lim, eps);
+optLim = Fibonacci(f, lim, eps);
 
 figure
 ezplot(f)
@@ -30,7 +30,7 @@ lim = [1 2];
 eps = 0.01;
 gamm = 0.0001;
 N = 100;
-optLim = lagrangeOpt(f, lim, eps, gamm, N);
+optLim = Lagrange(f, lim, eps, gamm, N);
 
 figure
 ezplot(f)
