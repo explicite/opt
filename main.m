@@ -1,8 +1,36 @@
 %import from fun folder
 import fun.Fibonacci
 import fun.Lagrange
+import fun.NelderMead
+import fun.Powell
+
 
 %Examples
+
+%Nelder - Mead
+f = @(x) 100*(x(2) - x(1).^2).^2 + (1-x(1)).^2;
+
+opt = zeros(100, 2);
+param  = zeros(100, 2);
+for i=1:100,
+    v1 = 2* rand;
+    v2 = 2* rand;
+    param(i, 1) = v1;
+    param(i, 2) = v2;
+    topt = NelderMead(f, 2, [v1 v2]);
+    opt(i, 1) = topt(1);
+    opt(i, 2) = topt(2);
+end
+%figure
+%ezsurf('100*(y-x^2)^2+(1-x)^2')
+
+%hold on
+%plot(opt(1), opt(2), 'ro')
+%hold off
+
+
+
+%Powell
 
 %Fibonacci
 f = @(x) (6 * x - 2) * (6 * x - 2) * sin(12 * x - 4);

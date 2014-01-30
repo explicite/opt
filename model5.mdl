@@ -1,12 +1,12 @@
 Model {
-  Name			  "lab5"
+  Name			  "model5"
   Version		  8.1
   MdlSubVersion		  0
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.1"
+    ComputedModelVersion    "1.2"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -18,7 +18,7 @@ Model {
       Type		      "Cell"
       Dimension		      2
       Cell		      "HDLSubsystem"
-      Cell		      "lab5"
+      Cell		      "model5"
       PropName		      "mdlProps"
     }
   }
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [679.0, 0.0, 1001.0, 1010.0]
+      Location		      [279.0, 11.0, 1164.0, 1010.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -50,7 +50,7 @@ Model {
 	DockPosition		"Left"
 	Width			[50]
 	Height			[50]
-	Filter			[8]
+	Filter			[9]
       }
       Object {
 	$PropName		"ExplorerBarInfo"
@@ -65,9 +65,9 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[758.0, 835.0]
-	ZoomFactor		[1.25]
-	Offset			[-13.886669055620814, 19.047619047619119]
+	Extents			[921.0, 835.0]
+	ZoomFactor		[1.0]
+	Offset			[-86.231907150858774, -73.233333333333292]
       }
     }
   }
@@ -77,9 +77,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Jan"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Jan 08 17:15:19 2014"
-  RTWModifiedTimeStamp	  311101946
-  ModelVersionFormat	  "1.%<AutoIncrement:1>"
+  LastModifiedDate	  "Wed Jan 08 17:57:53 2014"
+  RTWModifiedTimeStamp	  311102286
+  ModelVersionFormat	  "1.%<AutoIncrement:2>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -117,7 +117,7 @@ Model {
     $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "lab5"
-    overrideMode_	    [0U]
+    overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
@@ -182,7 +182,7 @@ Model {
 	  $ObjectID		  9
 	  Version		  "1.13.0"
 	  StartTime		  "0.0"
-	  StopTime		  "t"
+	  StopTime		  "T"
 	  AbsTol		  "auto"
 	  FixedStep		  "dt"
 	  InitialStep		  "auto"
@@ -699,7 +699,7 @@ Model {
       }
       Name		      "Configuration"
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition     [ 302, 179, 1378, 848 ] 
+      ConfigPrmDlgPosition     [ 294, 148, 1386, 856 ] 
     }
     PropName		    "ConfigurationSets"
   }
@@ -882,8 +882,8 @@ Model {
     }
   }
   System {
-    Name		    "lab5"
-    Location		    [679, 0, 1680, 1010]
+    Name		    "model5"
+    Location		    [279, 11, 1443, 1021]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
@@ -895,7 +895,7 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "125"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "26"
     Block {
@@ -1115,6 +1115,7 @@ Model {
       Position		      [65, 410, 95, 440]
       ZOrder		      23
       Amplitude		      "A"
+      Frequency		      "f"
       SampleTime	      "0"
     }
     Block {
